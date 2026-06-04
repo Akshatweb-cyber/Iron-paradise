@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY | IRON PARADISE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Montserrat', sans-serif; background: #000; color: #fff; overflow-x: hidden; }
+        header { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; background: rgba(0,0,0,0.9); border-bottom: 3px solid #ff003c; gap: 15px; }
+        .logo { font-size: 1.5rem; font-weight: 900; width: 100%; text-align: center; } .logo span { color: #ff003c; }
+        nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+        nav a { color: #fff; text-decoration: none; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; }
+        .container { width: 95%; max-width: 1200px; margin: 40px auto; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
+        img { width: 100%; height: 250px; object-fit: cover; border: 2px solid #222; transition: 0.4s; }
+        img:hover { border-color: #ff003c; transform: scale(1.02); }
+        @media (min-width: 768px) { header { justify-content: space-between; } .logo { width: auto; } nav a { font-size: 0.9rem; } }
+    </style>
+</head>
+<body>
+    <header><div class="logo">IRON <span>PARADISE</span></div><nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="plans.html">Plans</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav></header>
+    <div class="container">
+        <h1 style="text-align:center; margin-bottom:30px;">The <span>Vault</span></h1>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" class="animate__animated animate__zoomIn">
+            <img src="https://images.unsplash.com/photo-1540206276907-fbd6cd1a28a6" class="animate__animated animate__zoomIn">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd" class="animate__animated animate__zoomIn">
+            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61" class="animate__animated animate__zoomIn">
+        </div>
+    </div>
+</body>
+</html>
